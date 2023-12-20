@@ -1,0 +1,21 @@
+.Welcome-Title {
+    color: #FD4556;
+    font-size: 128px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+}
+.Welcome-Description {
+    display: flex;
+    gap: 32px;
+    color: #53212B;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    width: 820px;
+}
+.Welcome-Vertical-Line {
+    border-right: 1px solid #FD4556;
+    padding-left: 16px;
+}
