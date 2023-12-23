@@ -1,4 +1,5 @@
-.projects-list {
-    background-color: red;
+.projects-container {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }

@@ -1,0 +1,24 @@
+.Projects-List {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.Project-Name {
+    color: #FD4556;
+    text-align: right;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+.Project-Description {
+    color: #000;
+    text-align: right;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}

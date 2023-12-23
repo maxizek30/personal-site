@@ -1,7 +1,9 @@
+import "../styles/ProjectsList.css"
+
 const ProjectsList = ({ projects }) => {
     return (
         <>
-           <ul>
+           <ul className="Projects-List">
                 {projects.map(project => (
                     <li key={project.name}>
                         <div className="Project-Name">{project.name}</div>
