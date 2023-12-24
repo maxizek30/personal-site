@@ -9,12 +9,18 @@
     overflow: auto;
     height: 85vh;
 }
+.layout.dark-mode {
+    background-color: #000000;
+}
 .header, .footer{
     background-color: #000000;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 10; /* Ensure the header and footer are above other content */
+}
+.header.dark-mode, .footer.dark-mode {
+    background-color: #53212B;
 }
 .header {
     top: 0;
@@ -54,7 +60,6 @@
     text-decoration: none;
 }
 .main-content {
-    color: black;
     flex-grow: 1;
     margin-left: 32px; /* Space for the left border */
     margin-right: 32px; /* Space for the right border */  
@@ -64,6 +69,7 @@
     bottom: 0;
     height: 32px;
     display: flex;
+    align-items: center;
 }
 
 /* Borders */
@@ -76,6 +82,10 @@
   width: 32px; /* Border width */
   background-color: black; /* Border color */
   z-index: 5; /* Above the main content, below the header/footer */
+}
+.dark-mode.layout::before,
+.dark-mode.layout::after {
+  background-color: #53212B; /* Dark mode background color */
 }
 
 .layout::before {

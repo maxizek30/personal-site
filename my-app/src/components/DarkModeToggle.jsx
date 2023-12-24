@@ -1,12 +1,19 @@
 import { useDarkMode } from "../context/DarkModeContext";
+import "../styles/DarkModeToggle.css"
 
 const DarkModeToggle = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
 
     return (
-        <button onClick={toggleDarkMode}>
-            {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-        </button>
+        <label className="switch">
+            <input 
+                type="checkbox" 
+                checked={darkMode} 
+                onChange={toggleDarkMode} 
+                readOnly
+            />
+            <div className="slider round"></div>
+        </label>
     );
 };
 

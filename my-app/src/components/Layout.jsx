@@ -1,12 +1,20 @@
 import { NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 import DarkModeToggle from "./DarkModeToggle";
-import "../styles/styles.css"
+import { useDarkMode } from "../context/DarkModeContext";
+import "../styles/Layout.css"
 
 const Layout = ({ children }) => {
+
+    const { darkMode } = useDarkMode(); // get the current dark mode state
+
+    const layoutClass = darkMode ? 'layout dark-mode' : 'layout';
+    const headerClass = `header ${darkMode ? 'dark-mode' : ''}`;
+    const footerClass = `footer ${darkMode ? 'dark-mode' : ''}`;
+
     return(
-        <div className="layout">
-            <header className="header">
+        <div className={layoutClass}>
+            <header className={headerClass}>
                 <div className="header-title">Max Lopez</div>
                 <div className="header-links">
                     <NavLink 
@@ -30,7 +38,7 @@ const Layout = ({ children }) => {
                 </div>
             </header>
             <div className="main-content">{children}</div>
-            <footer className="footer">
+            <footer className={footerClass}>
                 <DarkModeToggle />
             </footer>
         </div>

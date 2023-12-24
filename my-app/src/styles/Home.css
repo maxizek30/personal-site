@@ -15,6 +15,9 @@
     line-height: normal;
     width: 820px;
 }
+.Welcome-Description.dark-mode {
+    color: #F5F5F5;
+}
 .Welcome-Vertical-Line {
     border-right: 1px solid #FD4556;
     padding-left: 16px;

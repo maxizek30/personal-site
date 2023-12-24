@@ -22,3 +22,6 @@
     font-weight: 100;
     line-height: normal;
 }
+.Project-Description.dark-mode {
+    color: #F5F5F5;
+}
