@@ -43,7 +43,7 @@
     margin-right: 32px;
     gap: 32px;
 }
-.header-links a {
+.inactive-link {
     width: 170px;
     /*Font*/
     color: #FFFBF5;
@@ -84,4 +84,13 @@
 
 .layout::after {
   right: 0;
+}
+.active-link {
+    width: 170px;
+    color: #FD4556;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 200;
+    line-height: normal;
+    text-decoration: none;
 }
