@@ -13,7 +13,7 @@
     font-style: normal;
     font-weight: 100;
     line-height: normal;
-    width: 820px;
+    width: 50%;
 }
 .Welcome-Description.dark-mode {
     color: #F5F5F5;
@@ -21,5 +21,32 @@
 .Welcome-Vertical-Line {
     border-right: 1px solid #FD4556;
     padding-left: 16px;
+}
+/* Large tablets and small laptops */
+@media only screen and (max-width: 1024px) {
+    .Welcome-Description {
+        width: auto;
+    }
+}
+/* Small tablets */
+@media only screen and (max-width: 580px) {
+    .Welcome-Title {
+        font-size: 88px;
+    }
+    .Welcome-Description {
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .Welcome-Title {
+        font-size: 56px;
+    }
+    .Welcome-Description {
+        font-size: 24px;
+        gap: 12px;
+    }
+    .Welcome-Vertical-Line {
+        padding-left: 4px;
+    }
 }
 

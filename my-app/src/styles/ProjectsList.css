@@ -25,3 +25,17 @@
 .Project-Description.dark-mode {
     color: #F5F5F5;
 }
+/* Small tablets */
+@media only screen and (max-width: 580px) {
+    .Project-Name {
+        font-size: 64px;
+    }
+    .Project-Description {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .Project-Name {
+        font-size: 48px;
+    }
+}

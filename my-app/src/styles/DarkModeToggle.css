@@ -61,3 +61,8 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  @media only screen and (max-width: 410px) {
+    .switch {
+      margin-left: 20px;
+    }
+  }
