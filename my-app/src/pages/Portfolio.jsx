@@ -4,7 +4,8 @@ import ProjectsList from "../components/ProjectsList";
 const projects = [
   {
     name: "StarBattleX",
-    description: "Lorem Ipsum is the best game ever made in the world"
+    description: "Lorem Ipsum is the best game ever made in the world",
+    route: "/StarBattleX"
   },
   {
     name: "VTRU website",
