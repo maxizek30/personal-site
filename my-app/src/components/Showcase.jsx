@@ -17,7 +17,7 @@ function Showcase({project}) {
     <>
         <div className={showcaseSectionClass}>
             <div className="titleGithubSection">
-                <h1>{project.title}</h1>
+               {project.title}
                 <a href={project.projectLink}>
                     <img src={project.projectLinkImage} alt={project.projectLinkImageAlt} />
                 </a>
@@ -25,11 +25,14 @@ function Showcase({project}) {
             <div className="imageTechSection">
                 <img src={project.projectImage} alt={project.projectImageAlt} />
                 <div className="techUsedSection">
-                    {project.technologies.map((tech, index) => (
-                        <a key={index} href={tech.link} target="_blank" rel="noopener noreferrer">
-                            <img src={tech.logoUrl} alt={`${tech.name} Logo`} />
-                        </a>
-                    ))}
+                    Tech used:
+                    <div className="techLogos">
+                        {project.technologies.map((tech, index) => (
+                            <a key={index} href={tech.link} target="_blank" rel="noopener noreferrer">
+                                <img src={tech.logoUrl} alt={`${tech.name} Logo`} />
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>  
             {project.contentSections.map((section, index) => (

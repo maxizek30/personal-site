@@ -1,3 +1,65 @@
 .Showcase-Section {
     color: black;
 }
+.Showcase-Section.dark-mode {
+    color: white;
+}
+.titleGithubSection {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 200;
+    gap: 40px;
+    color: #FD4556;
+    font-style: italic;
+    line-height: normal;
+}
+.titleGithubSection a {
+    display: flex;
+}
+.titleGithubSection img {
+    width: 60px;
+}
+.imageTechSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+.imageTechSection img {
+    width: 70%;
+    border: solid black 4px
+}
+.techUsedSection {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    flex: 1;
+    font-size: 40px;
+    font-weight: 300;
+    color: #FD4556;
+    font-style: italic;
+    align-items: center;
+}
+.techLogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 logos per row */
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+.techUsedSection img {
+    width: 100px;
+    border: none
+}
+h2 {
+    color: #FD4556;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 100;
+}
+p {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+

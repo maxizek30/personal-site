@@ -37,6 +37,7 @@
         font-size: 28px;
     }
 }
+/* Phones tablets */
 @media only screen and (max-width: 410px) {
     .Welcome-Title {
         font-size: 56px;
