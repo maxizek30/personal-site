@@ -3,7 +3,8 @@ import Home from './pages/Home';
 import Layout from './components/Layout';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
-import StarBattleXShowcase from './pages/StarBattleXShowcase';
+import Showcase from './components/Showcase';
+import projects from './projectsData';
 
 function App() {
   return (
@@ -11,9 +12,16 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} /> 
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio projects={projects}/>}>
+            {projects.map(project => (
+              <Route 
+                key={project.name}
+                path={project.name}
+                element={<Showcase project={project} />}
+              />  
+            ))}
+          </Route>
           <Route path="/contact" element={<Contact />} /> 
-          <Route path="/StarBattleX" element={<StarBattleXShowcase />} /> 
         </Routes>
       </Layout>
     </Router>

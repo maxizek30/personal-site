@@ -1,41 +1,24 @@
-import "../styles/Portfolio.css"
+import { useLocation, Outlet } from 'react-router-dom';
 import ProjectsList from "../components/ProjectsList";
+import "../styles/Portfolio.css";
 
-const projects = [
-  {
-    name: "StarBattleX",
-    description: "Lorem Ipsum is the best game ever made in the world",
-    route: "/StarBattleX"
-  },
-  {
-    name: "VTRU website",
-    description: "Lorem ipsum this is the best website ever created"
-  },
-  {
-    name: "VTRU website",
-    description: "Lorem ipsum this is the best website ever created"
-  },
-  {
-    name: "VTRU website",
-    description: "Lorem ipsum this is the best website ever created"
-  },
-  {
-    name: "VTRU website",
-    description: "Lorem ipsum this is the best website ever created"
-  },
-  {
-    name: "VTRU website",
-    description: "Lorem ipsum this is the best website ever created"
-  }
-];
-function Portfolio() {
+function Portfolio({ projects }) {
+  const location = useLocation();
+
+  // Check if the path is exactly '/portfolio'
+  const isPortfolioHome = location.pathname === '/portfolio';
+
   return (
     <>
-    <div className="projects-container">
-      <ProjectsList projects={projects}/>
-    </div>
+      <div className="projects-container">
+        {isPortfolioHome ? (
+          <ProjectsList projects={projects} />
+        ) : (
+          <Outlet /> // This will render the Showcase component
+        )}
+      </div>
     </>
-  )
+  );
 }
 
-export default Portfolio
+export default Portfolio;
