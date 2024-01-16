@@ -13,7 +13,7 @@ import starBattleXImage from './assets/StarBattleXImage.png';
 const projects = [
     {
         name: "StarBattleX",
-        description: "Lorem Ipsum is the best game ever made in the world",
+        description: "An Advanced Platform for Star Battle Challenges",
         route: "/StarBattleX",
         title: "StarBattleX",
         projectLink: "https://github.com/levienk/StarBattleX",

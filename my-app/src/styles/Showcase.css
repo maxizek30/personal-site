@@ -48,7 +48,7 @@
 }
 .techUsedSection img {
     width: 100px;
-    border: none
+    border: none;
 }
 h2 {
     color: #FD4556;
@@ -62,4 +62,35 @@ p {
     font-weight: 200;
     line-height: normal;
 }
+/* Large tablets and small laptops */
+@media only screen and (max-width: 1024px) {
+    .imageTechSection img {
+        width: 100%;
+    }
+    .techUsedSection img {
+        width: 100px;
+    }
+    .titleGithubSection {
+        justify-content: space-between;
+    }
+    .titleGithubSection img {
+        width: 40px;
+    }
+}
+@media only screen and (max-width: 610px) {
+    .titleGithubSection {
+        font-size: 48px;
+    }
+    .techUsedSection {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
+
+
 

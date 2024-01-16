@@ -8,6 +8,7 @@ function Showcase({project}) {
 
 
     const showcaseSectionClass = `Showcase-Section ${darkMode ? 'dark-mode' : ''}`;
+    const imageTechSectionClass = `imageTechSection ${darkMode ? 'dark-mode' : ''}`;
 
     if (!project) {
         return <div>Loading...</div>; // Or any other fallback UI
@@ -22,7 +23,7 @@ function Showcase({project}) {
                     <img src={project.projectLinkImage} alt={project.projectLinkImageAlt} />
                 </a>
             </div>
-            <div className="imageTechSection">
+            <div className={imageTechSectionClass}>
                 <img src={project.projectImage} alt={project.projectImageAlt} />
                 <div className="techUsedSection">
                     Tech used:
