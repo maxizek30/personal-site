@@ -1,10 +1,11 @@
 //logos
-import githubIcon from './assets/logos/github3-icon.png'
+import githubIcon from './assets/logos/github-light.png'
 import javaIcon from './assets/logos/java-icon.png'
 import dockerIcon from './assets/logos/docker-icon.png'
 import javafxIcon from './assets/logos/javafx-icon.png'
 import gradleIcon from './assets/logos/gradle-icon.png'
 import mongoIcon from './assets/logos/mongoDb-icon.png'
+import githubIconDark from './assets/logos/github-dark.png'
 
 
 //project images
@@ -17,7 +18,8 @@ const projects = [
         route: "/StarBattleX",
         title: "StarBattleX",
         projectLink: "https://github.com/levienk/StarBattleX",
-        projectLinkImage: githubIcon,
+        projectLinkImage: githubIconDark,
+        projectLinkImageDark: githubIcon,
         projectLinkImageAlt: "Github Icon",
         projectImage: starBattleXImage,
         projectImageAlt: "Menu and Main Game of StarBattleX",

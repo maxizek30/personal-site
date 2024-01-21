@@ -1,5 +1,7 @@
 .Showcase-Section {
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 .Showcase-Section.dark-mode {
     color: white;
@@ -23,21 +25,35 @@
 .imageTechSection {
     display: flex;
     flex-wrap: wrap;
-}
-.imageTechSection img {
-    width: 70%;
-    border: solid black 4px
+    width: 100%;
+    gap: 24px;
 }
 .techUsedSection {
+    flex: 1 1 25%;
     display: flex;
     flex-direction: column;
-    padding: 12px;
-    flex: 1;
+    align-items: center;
+
+    /* font stuff*/
     font-size: 40px;
     font-weight: 300;
     color: #FD4556;
     font-style: italic;
-    align-items: center;
+}
+.techUsedSection img {
+    width: 100px;
+    border: none;
+}
+.mainImageSection {
+    flex: 1 1 70%;
+}
+.mainImageSection img {
+    background-color: "red";
+    width: 100%;
+    border: solid black 4px
+}
+.mainImageSection.dark-mode img {
+    border: solid white 4px
 }
 .techLogos {
     display: grid;
@@ -45,10 +61,6 @@
     align-items: center;
     justify-items: center;
     width: 100%;
-}
-.techUsedSection img {
-    width: 100px;
-    border: none;
 }
 h2 {
     color: #FD4556;
@@ -63,13 +75,11 @@ p {
     font-weight: 200;
     line-height: normal;
 }
+
 /* Large tablets and small laptops */
 @media only screen and (max-width: 1024px) {
-    .imageTechSection img {
-        width: 100%;
-    }
-    .techUsedSection img {
-        width: 100px;
+    .mainImageSection, .techUsedSection {
+        width: 100%; /* Full width on smaller screens */
     }
     .titleGithubSection {
         justify-content: space-between;

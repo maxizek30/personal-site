@@ -4,11 +4,15 @@ import '../styles/Showcase.css';
 
 function Showcase({project}) {
     const { darkMode } = useDarkMode();
-    console.log(project); // Check what's being logged
 
 
     const showcaseSectionClass = `Showcase-Section ${darkMode ? 'dark-mode' : ''}`;
-    const imageTechSectionClass = `imageTechSection ${darkMode ? 'dark-mode' : ''}`;
+    const mainImageSectionClass = `mainImageSection ${darkMode ? 'dark-mode' : ''}`;
+
+    const projectLinkImageSrc = darkMode && project.projectLinkImageDark
+                                ? project.projectLinkImageDark
+                                : project.projectLinkImage;
+
 
     if (!project) {
         return <div>Loading...</div>; // Or any other fallback UI
@@ -20,11 +24,13 @@ function Showcase({project}) {
             <div className="titleGithubSection">
                {project.title}
                 <a href={project.projectLink}>
-                    <img src={project.projectLinkImage} alt={project.projectLinkImageAlt} />
+                    <img src={projectLinkImageSrc} alt={project.projectLinkImageAlt} />
                 </a>
             </div>
-            <div className={imageTechSectionClass}>
-                <img src={project.projectImage} alt={project.projectImageAlt} />
+            <div className="imageTechSection">
+                <div className={mainImageSectionClass}>
+                    <img src={project.projectImage} alt={project.projectImageAlt} />
+                </div>
                 <div className="techUsedSection">
                     Tech used:
                     <div className="techLogos">
