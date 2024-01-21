@@ -6,6 +6,7 @@ import javafxIcon from './assets/logos/javafx-icon.png'
 import gradleIcon from './assets/logos/gradle-icon.png'
 import mongoIcon from './assets/logos/mongoDb-icon.png'
 import githubIconDark from './assets/logos/github-dark.png'
+import springBootIcon from './assets/logos/springBoot.png'
 
 
 //project images
@@ -25,9 +26,9 @@ const projects = [
         projectImageAlt: "Menu and Main Game of StarBattleX",
         technologies: [
             {
-            name: 'Java',
-            logoUrl: javaIcon,
-            link: 'https://www.java.com/en/'
+                name: 'Java',
+                logoUrl: javaIcon,
+                link: 'https://www.java.com/en/'
             },
             {
                 name: 'JavaFx',
@@ -35,7 +36,7 @@ const projects = [
                 link: 'https://openjfx.io/'
             },
             {
-                name: 'docker',
+                name: 'Docker',
                 logoUrl: dockerIcon,
                 link: 'https://www.docker.com/'
             },
@@ -45,9 +46,14 @@ const projects = [
                 link: 'https://www.mongodb.com/'
             },
             {
-                name: 'gradle',
+                name: 'Gradle',
                 logoUrl: gradleIcon,
                 link: 'https://gradle.org/'
+            },
+            {
+                name: 'Spring Boot',
+                logoUrl: springBootIcon,
+                link: 'https://spring.io/'
             }
         ],
         contentSections: [
