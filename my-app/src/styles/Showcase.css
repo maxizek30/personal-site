@@ -45,7 +45,7 @@
     border: none;
 }
 .mainImageSection {
-    flex: 1 1 70%;
+    flex: 1 1 60%;
 }
 .mainImageSection img {
     background-color: "red";
