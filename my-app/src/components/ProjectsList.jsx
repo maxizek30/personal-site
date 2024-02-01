@@ -5,30 +5,50 @@ import { useDarkMode } from "../context/DarkModeContext";
 const ProjectsList = ({ projects }) => {
     const { darkMode } = useDarkMode(); 
     const projectDescriptionClass = `Project-Description ${darkMode ? 'dark-mode' : ''}`;
+    const groupProjectTitleClass = `groupProjectTitle ${darkMode ? 'dark-mode' : ''}`;
 
-    return (
-        <>
-           <ul className="Projects-List">
-                {projects.map((project, index) => (
-                    <li key={index}> {/* Use index for key to ensure uniqueness */}
-                        <div className="Project-Name">
-                            {project.route ? (
-                                <Link 
-                                    to={project.name}
-                                    style={{ textDecoration: 'none', color: 'inherit' }}
-                                >
-                                    {project.name}
-                                </Link>
+    
+    //individual projects
+    const individualProjects = projects.filter(project => !project.groupProject);
+    //group projects
+    const groupProjects = projects.filter(project => project.groupProject);
+
+    const renderProjects = (ProjectsList) => (
+        <ul className='Projects-List'>
+            {ProjectsList.map((project, index) => (
+                <li key={index}>
+                    <div className='Project-Name'>
+                        {project.route ?(
+                            <Link
+                                to={project.name}
+                                style={{ textDecoration: 'none', color: 'inherit' }}
+                            >
+                                {project.name}
+                            </Link>
                             ) : project.url ? (
                                 <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
                             ) : (
                                 <span>{project.name}</span>
-                            )}
-                        </div>
-                        <div className={projectDescriptionClass}>{project.description}</div>
-                    </li>
-                ))}
-            </ul> 
+                        )}
+                    </div>
+                    <div className={projectDescriptionClass}>{project.description}</div>
+                </li>
+            ))}
+        </ul>
+    );
+
+    return (
+        <>
+            <div className="projectsListContainer">
+                {renderProjects(individualProjects)}
+
+                {groupProjects.length > 0 && (
+                    <>
+                       <div className={groupProjectTitleClass}>Group Projects</div>
+                        {renderProjects(groupProjects)}
+                    </>
+                )}
+            </div>
         </>
     );
 }

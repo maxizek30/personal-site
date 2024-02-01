@@ -1,3 +1,4 @@
+
 .Projects-List {
     list-style-type: none;
     margin: 0;
@@ -25,6 +26,18 @@
 .Project-Description.dark-mode {
     color: #F5F5F5;
 }
+.groupProjectTitle {
+    color: #000000;
+    text-align: right;
+    font-size: 84px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.groupProjectTitle.dark-mode {
+    color: #FFFBF5;
+}
+
 /* Small tablets */
 @media only screen and (max-width: 580px) {
     .Project-Name {
@@ -33,9 +46,15 @@
     .Project-Description {
         font-size: 24px;
     }
+    .groupProjectTitle {
+        font-size: 72px;
+    }
 }
 @media only screen and (max-width: 410px) {
     .Project-Name {
         font-size: 48px;
+    }
+    .groupProjectTitle {
+        font-size: 56px;
     }
 }

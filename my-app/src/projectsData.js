@@ -22,6 +22,7 @@ const projects = [
         projectLinkImage: githubIconDark,
         projectLinkImageDark: githubIcon,
         projectLinkImageAlt: "Github Icon",
+        groupProject: true,
         projectImage: starBattleXImage,
         projectImageAlt: "Menu and Main Game of StarBattleX",
         technologies: [
@@ -95,6 +96,7 @@ const projects = [
         projectLink: "https://github.com/levienk/StarBattleX",
         projectLinkImage: "../assets/logo/github-icon.svg",
         projectLinkImageAlt: "Github Icon",
+        groupProject: false,
         projectImage: "../assets/StarBattleXImage.png",
         projectImageAlt: "Menu and Main Game of StarBattleX",
         technologies: [
