@@ -6,7 +6,7 @@ import javafxIcon from './assets/logos/javafx-icon.png'
 import gradleIcon from './assets/logos/gradle-icon.png'
 import mongoIcon from './assets/logos/mongoDb-icon.png'
 import githubIconDark from './assets/logos/github-dark.png'
-import springBootIcon from './assets/logos/springBoot.png'
+import springBootIcon from './assets/logos/spring-logo.png'
 
 
 //project images

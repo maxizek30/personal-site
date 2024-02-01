@@ -32,7 +32,6 @@ function Showcase({project}) {
                     <img src={project.projectImage} alt={project.projectImageAlt} />
                 </div>
                 <div className="techUsedSection">
-                    Tech used:
                     <div className="techLogos">
                         {project.technologies.map((tech, index) => (
                             <a key={index} href={tech.link} target="_blank" rel="noopener noreferrer">
