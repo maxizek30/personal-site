@@ -22,11 +22,8 @@ const Layout = ({ children }) => {
     return(
         <div className={layoutClass}>
             <header className={headerClass}>
-                <div className="header-top">
-                    <div className="header-title">
-                        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Max Lopez</Link>
-                    </div>
-                    <div className="menu-icon" onClick={toggleMenu}>☰</div>
+                <div className="header-title">
+                    <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>Max Lopez</Link>
                 </div>
                 <div className={headerLinksClass}>
                     <NavLink 
@@ -51,6 +48,7 @@ const Layout = ({ children }) => {
                         Contact
                     </NavLink>
                 </div>
+                <div className="menu-icon" onClick={toggleMenu}>☰</div>
             </header>
             <div className="main-content">{children}</div>
             <footer className={footerClass}>
