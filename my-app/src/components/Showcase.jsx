@@ -1,9 +1,18 @@
+import { useEffect, useState } from 'react';
 import { useDarkMode } from "../context/DarkModeContext";
 import '../styles/Showcase.css';
+import ReactMarkdown from 'react-markdown';
 
 
 function Showcase({project}) {
     const { darkMode } = useDarkMode();
+    const [content, setContent] = useState("");
+
+    useEffect(() => {
+        fetch(project.content)
+          .then((res) => res.text())
+          .then((text) => setContent(text));
+      }, []);
 
 
     const showcaseSectionClass = `Showcase-Section ${darkMode ? 'dark-mode' : ''}`;
@@ -12,6 +21,7 @@ function Showcase({project}) {
     if (!project) {
         return <div>Loading...</div>; // Or any other fallback UI
     }
+    
 
     return (
     <>
@@ -37,13 +47,8 @@ function Showcase({project}) {
                         ))}
                     </div>
                 </div>
-            </div>  
-            {project.contentSections.map((section, index) => (
-                <div key={index}>
-                    <h2>{section.subtitle}</h2>
-                    <p>{section.text}</p>
-                </div>
-            ))}
+            </div>
+            <ReactMarkdown children={content} />  
         </div>
     </>
   );
