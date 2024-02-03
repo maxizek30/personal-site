@@ -27,12 +27,13 @@
     color: #F5F5F5;
 }
 .groupProjectTitle {
-    color: #000000;
+    color: #53212B;
     text-align: right;
     font-size: 84px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
+    text-decoration: underline;
 }
 .groupProjectTitle.dark-mode {
     color: #FFFBF5;

@@ -9,11 +9,6 @@ function Showcase({project}) {
     const showcaseSectionClass = `Showcase-Section ${darkMode ? 'dark-mode' : ''}`;
     const mainImageSectionClass = `mainImageSection ${darkMode ? 'dark-mode' : ''}`;
 
-    const projectLinkImageSrc = darkMode && project.projectLinkImageDark
-                                ? project.projectLinkImageDark
-                                : project.projectLinkImage;
-
-
     if (!project) {
         return <div>Loading...</div>; // Or any other fallback UI
     }
@@ -23,9 +18,11 @@ function Showcase({project}) {
         <div className={showcaseSectionClass}>
             <div className="titleGithubSection">
                {project.title}
-                <a href={project.projectLink}>
-                    <img src={projectLinkImageSrc} alt={project.projectLinkImageAlt} />
-                </a>
+                {project.projectLinks.map((projectLink, index) => (
+                    <a key={index} href={projectLink.url}>
+                        <img src={darkMode && projectLink.imageDark ? projectLink.imageDark : projectLink.image} alt={projectLink.imageAlt} />
+                    </a>
+                ))}
             </div>
             <div className="imageTechSection">
                 <div className={mainImageSectionClass}>
