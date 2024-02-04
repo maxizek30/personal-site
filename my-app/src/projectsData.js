@@ -7,8 +7,15 @@ import gradleIcon from './assets/logos/gradle-icon.png'
 import mongoIcon from './assets/logos/mongoDb-icon.png'
 import githubIconDark from './assets/logos/github-dark.png'
 import springBootIcon from './assets/logos/spring-logo.png'
+import globeIcon from './assets/logos/globe.svg'
+import globeIconDark from './assets/logos/globeDark.svg'
+import reactIcon from './assets/logos/react-icon.svg'
+import KQWZSiteImage from './assets/OneAmericaVoiceWebsite.png'
+import muiLogo from './assets/logos/muiLogo.png'
+import netlifyLogo from './assets/logos/netlify-logo-svg-vector.svg'
 
-import StarBattleXContent from './StarBattleX.md'
+import StarBattleXContent from './assets/documents/StarBattleX.md'
+import KQWZRadioContent from './assets/documents/KqwzRadio.md'
 
 
 //project images
@@ -65,5 +72,48 @@ const projects = [
         ],
         content: StarBattleXContent
     },
+    {
+        name: "kqwzradio",
+        description: "Empowering South King County's voices through inclusive, community-driven radio.",
+        route: "/kqwzradio",
+        title: "KQWZ Radio",
+        projectLinks: [
+            {
+                url: "https://kqwzradio.org/",
+                image: globeIconDark,
+                imageDark: globeIcon,
+                imageAlt: "Globe icon"
+            },
+            {
+                url: "https://github.com/maxizek30/KQWZ-Site",
+                image: githubIconDark,
+                imageDark: githubIcon,
+                imageAlt: "Github Icon",
+            }
+        ],
+        groupProject: false,
+        projectImage: KQWZSiteImage,
+        projectImageAlt: "Website screenshot of kqwzradio.org",
+        technologies: [
+            {
+                name: 'React',
+                logoUrl: reactIcon,
+                link: 'https://react.dev/'
+            },
+            {
+                name: 'Material-UI',
+                logoUrl: muiLogo,
+                link: 'https://mui.com/'
+            },
+            {
+                name: 'Netlify',
+                logoUrl: netlifyLogo,
+                link: 'https://www.netlify.com/'
+            }
+        ],
+        content: KQWZRadioContent
+
+
+    }
   ];
 export default projects;
