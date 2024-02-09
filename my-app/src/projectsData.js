@@ -10,16 +10,19 @@ import springBootIcon from './assets/logos/spring-logo.png'
 import globeIcon from './assets/logos/globe.svg'
 import globeIconDark from './assets/logos/globeDark.svg'
 import reactIcon from './assets/logos/react-icon.svg'
-import KQWZSiteImage from './assets/OneAmericaVoiceWebsite.png'
 import muiLogo from './assets/logos/muiLogo.png'
 import netlifyLogo from './assets/logos/netlify-logo-svg-vector.svg'
 
+//project images
+import starBattleXImage from './assets/project-images/StarBattleXImage.png';
+import KQWZSiteImage from './assets/project-images/OneAmericaVoiceWebsite.png'
+
+//MD content
 import StarBattleXContent from './assets/documents/StarBattleX.md'
 import KQWZRadioContent from './assets/documents/KqwzRadio.md'
 
 
-//project images
-import starBattleXImage from './assets/StarBattleXImage.png';
+
 
 const projects = [
     {
