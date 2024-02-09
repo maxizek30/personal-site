@@ -24,14 +24,20 @@ const ProjectsList = ({ projects }) => {
                                 style={{ textDecoration: 'none', color: 'inherit' }}
                             >
                                 {project.name}
+                                <div className={projectDescriptionClass}>{project.description}</div>
                             </Link>
                             ) : project.url ? (
-                                <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
+                                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                    {project.name}
+                                    <div className={projectDescriptionClass}>{project.description}</div>
+                                </a>
                             ) : (
-                                <span>{project.name}</span>
+                                <>
+                                    <span>{project.name}</span>
+                                    <div className={projectDescriptionClass}>{project.description}</div>
+                                </>
                         )}
                     </div>
-                    <div className={projectDescriptionClass}>{project.description}</div>
                 </li>
             ))}
         </ul>
