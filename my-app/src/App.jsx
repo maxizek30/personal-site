@@ -16,7 +16,7 @@ function App() {
             {projects.map(project => (
               <Route 
                 key={project.name}
-                path={project.name}
+                path={project.route}
                 element={<Showcase project={project} />}
               />  
             ))}

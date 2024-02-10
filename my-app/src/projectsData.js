@@ -28,7 +28,7 @@ const projects = [
     {
         name: "StarBattleX",
         description: "An Advanced Platform for Star Battle Challenges",
-        route: "/StarBattleX",
+        route: "StarBattleX",
         title: "StarBattleX",
         projectLinks: [
             {
@@ -76,9 +76,9 @@ const projects = [
         content: StarBattleXContent
     },
     {
-        name: "kqwzradio",
+        name: "kqwzradio.org",
         description: "Empowering South King County's voices through inclusive, community-driven radio.",
-        route: "/kqwzradio",
+        route: "kqwzradio",
         title: "KQWZ Radio",
         projectLinks: [
             {

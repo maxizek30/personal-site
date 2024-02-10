@@ -20,7 +20,7 @@ const ProjectsList = ({ projects }) => {
                     <div className='Project-Name'>
                         {project.route ?(
                             <Link
-                                to={project.name}
+                                to={project.route}
                                 style={{ textDecoration: 'none', color: 'inherit' }}
                             >
                                 {project.name}
