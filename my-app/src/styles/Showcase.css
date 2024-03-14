@@ -2,72 +2,73 @@
     color: black;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.projectContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 .Showcase-Section.dark-mode {
     color: white;
 }
-.titleGithubSection {
+.titleSection {
     display: flex;
     align-items: center;
-    font-size: 100px;
-    font-weight: 200;
-    gap: 40px;
+    justify-content: space-between;
+
+    /* font stuff */
     color: #FD4556;
     font-style: italic;
     line-height: normal;
+    font-size: 100px;
+    font-weight: 200;
 }
-.titleGithubSection a {
-    display: flex;
-}
-.titleGithubSection img {
-    width: 60px;
-}
-.imageTechSection {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 24px;
-}
-.techUsedSection {
-    flex: 1 1 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* font stuff*/
-    font-size: 40px;
-    font-weight: 300;
-    color: #FD4556;
+.backButton {
+    color: grey;
     font-style: italic;
-}
-.techUsedSection img {
+    line-height: normal;
     width: 100px;
+    font-size: 28px;
+    font-weight: 10;
+    cursor: pointer;
+    background-color: transparent;
     border: none;
+
 }
-.mainImageSection {
-    flex: 1 1 60%;
+.projectTitle {
+
 }
-.mainImageSection img {
-    background-color: "red";
+.spacer {
+    width: 100px;
+}
+.projectImage {
     width: 100%;
-    border: solid black 4px
 }
-.mainImageSection.dark-mode img {
-    border: solid white 4px
+.projectLogos {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.projectLogos img {
+    width: 80px;
+}
+.linkLogos {
+    display: flex;
+    gap: 30px;
 }
 .techLogos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 logos per row */
+   display: flex;
     align-items: center;
-    justify-items: center;
-    width: 100%;
+    gap: 30px;
 }
 h2 {
     color: #FD4556;
     font-size: 60px;
     font-style: normal;
     font-weight: 100;
-    margin-bottom: 20px;
+    text-align: center;
 }
 p {
     font-size: 32px;
@@ -78,25 +79,48 @@ p {
 
 /* Large tablets and small laptops */
 @media only screen and (max-width: 1024px) {
-    .mainImageSection, .techUsedSection {
+    .projectContainer {
         width: 100%; /* Full width on smaller screens */
     }
-    .titleGithubSection {
-        justify-content: space-between;
+    .titleSection {
+        font-size: 80px;
     }
-    .titleGithubSection img {
-        width: 40px;
+    .projectLogos img {
+        width: 64px;
     }
-}
-@media only screen and (max-width: 610px) {
-    .titleGithubSection {
-        font-size: 48px;
+    .techLogos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 3 logos per row */
     }
-    .techUsedSection {
-        font-size: 32px;
+    .backButton {
+        font-size: 24px;
     }
     h2 {
-        font-size: 36px;
+        font-size: 48px;
+    }
+    p {
+        font-size: 32px;
+    }
+}
+/* Phones */
+@media only screen and (max-width: 610px) {
+    .projectContainer {
+        width: 100%;
+    }
+    .titleSection {
+        font-size: 48px;
+    }
+    .projectLogos img {
+        width: 44px;
+    }
+    .techLogos {
+        grid-template-columns: repeat(3, 1fr); /* 3 logos per row */
+    }
+    .backButton {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 32px;
     }
     p {
         font-size: 24px;

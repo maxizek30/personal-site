@@ -1,4 +1,7 @@
+.projectsListContainer {
 
+    width: 100%;
+}
 .Projects-List {
     list-style-type: none;
     margin: 0;

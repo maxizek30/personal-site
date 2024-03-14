@@ -32,7 +32,7 @@ const projects = [
         title: "StarBattleX",
         projectLinks: [
             {
-                url: "https://github.com/levienk/StarBattleX",
+                link: "https://github.com/levienk/StarBattleX",
                 image: githubIconDark,
                 imageDark: githubIcon,
                 imageAlt: "Github Icon",
@@ -82,13 +82,13 @@ const projects = [
         title: "KQWZ Radio",
         projectLinks: [
             {
-                url: "https://kqwzradio.org/",
+                link: "https://kqwzradio.org/",
                 image: globeIconDark,
                 imageDark: globeIcon,
                 imageAlt: "Globe icon"
             },
             {
-                url: "https://github.com/maxizek30/KQWZ-Site",
+                link: "https://github.com/maxizek30/KQWZ-Site",
                 image: githubIconDark,
                 imageDark: githubIcon,
                 imageAlt: "Github Icon",

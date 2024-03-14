@@ -27,7 +27,7 @@ const ProjectsList = ({ projects }) => {
                                 <div className={projectDescriptionClass}>{project.description}</div>
                             </Link>
                             ) : project.url ? (
-                                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                                <a href={project.url}w target="_blank" rel="noopener noreferrer">
                                     {project.name}
                                     <div className={projectDescriptionClass}>{project.description}</div>
                                 </a>
