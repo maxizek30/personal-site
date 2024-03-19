@@ -77,7 +77,7 @@ const projects = [
     },
     {
         name: "kqwzradio.org",
-        description: "Empowering South King County's voices through inclusive, community-driven radio.",
+        description: "Website for One America Voice",
         route: "kqwzradio",
         title: "KQWZ Radio",
         projectLinks: [
