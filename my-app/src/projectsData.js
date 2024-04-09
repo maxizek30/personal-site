@@ -15,11 +15,13 @@ import netlifyLogo from './assets/logos/netlify-logo-svg-vector.svg'
 
 //project images
 import starBattleXImage from './assets/project-images/StarBattleXImage.png';
-import KQWZSiteImage from './assets/project-images/OneAmericaVoiceWebsite.png'
+import KQWZSiteImage from './assets/project-images/OneAmericaVoiceWebsite.png';
+import PersonalWebsiteImage from './assets/project-images/PersonalWebsiteHeroImage.png'
 
 //MD content
 import StarBattleXContent from './assets/documents/StarBattleX.md'
 import KQWZRadioContent from './assets/documents/KqwzRadio.md'
+import PersonalSiteContent from './assets/documents/PersonalSite.md'
 
 
 
@@ -115,8 +117,36 @@ const projects = [
             }
         ],
         content: KQWZRadioContent
-
-
+    },
+    {
+        name: "maxizek30.me",
+        description: "My personal website",
+        route: "personal-website",
+        title: "maxizek30.me",
+        projectLinks: [
+            {
+                link: "https://github.com/maxizek30/personal-site",
+                image: githubIconDark,
+                imageDark: githubIcon,
+                imageAlt: "Github Icon",
+            }
+        ],
+        groupProject: false,
+        projectImage: PersonalWebsiteImage,
+        projectImageAlt: "Website screenshot of maxizek30.me",
+        technologies: [
+            {
+                name: 'React',
+                logoUrl: reactIcon,
+                link: 'https://react.dev/'
+            },
+            {
+                name: 'Netlify',
+                logoUrl: netlifyLogo,
+                link: 'https://www.netlify.com/'
+            }
+        ],
+        content: PersonalSiteContent,
     }
   ];
 export default projects;
