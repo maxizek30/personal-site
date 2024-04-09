@@ -143,7 +143,13 @@ p {
     .backButton {
         font-size: 14px;
     }
+    h1 {
+       font-size: 44px;
+    }
     h2 {
+        font-size: 36px;
+    }
+    h3 {
         font-size: 32px;
     }
     p {
