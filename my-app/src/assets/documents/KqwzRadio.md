@@ -15,9 +15,8 @@ The choice of Material-UI as the UI library was driven by its array of "cool" co
 
 ### Venturing into Figma
 
-I've always heard that a design-first approach significantly eases the development process. True to the advice, I decided to create mockups on Figma(Pictured Below). Despite my initial unfamiliarity with the tool, its capabilities—ranging from component creation, responsive frame adjustments, to simulating page navigation and animations—were impressive. However, given the plethora of features and my aim to keep the project manageable, I opted for simplicity, focusing on the essential elements of text, color, and images. Although the final design deviated from the initial mockups, they served as invaluable guides, preventing decision paralysis during the development.
+I've always heard that a design-first approach significantly eases the development process. True to the advice, I decided to create mockups on Figma. Despite my initial unfamiliarity with the tool, its capabilities—ranging from component creation, responsive frame adjustments, to simulating page navigation and animations—were impressive. However, given the plethora of features and my aim to keep the project manageable, I opted for simplicity, focusing on the essential elements of text, color, and images. Although the final design deviated from the initial mockups, they served as invaluable guides, preventing decision paralysis during the development.
 <a href="https://www.figma.com/file/ShLZRQ6ok2pUdYyS2hbc1k/Website-Wireframe?type=design&node-id=0%3A1&mode=design&t=jWd1qHsdko0slJzg-1" target="_blank">Link to Figma</a>
-<img src="/src/assets/project-images/OneAmericaVoiceFigma.png" alt="Figma mockups of OneAmericaVoice Website" width="100%" height="auto">
 ## Development Insights
 
 ### Tackling Responsiveness
