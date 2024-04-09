@@ -3,6 +3,7 @@ import { useDarkMode } from "../context/DarkModeContext";
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../styles/Showcase.css';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from "rehype-raw";
 
 
 function Showcase({project}) {
@@ -62,7 +63,7 @@ function Showcase({project}) {
                     </div>
                 </div>
                 {/*content*/}
-                <ReactMarkdown children={content} />
+                <ReactMarkdown  children={content} rehypePlugins={[rehypeRaw]} />
             </div>
         </div>
     </>

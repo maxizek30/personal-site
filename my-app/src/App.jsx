@@ -5,8 +5,17 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Showcase from './components/Showcase';
 import projects from './projectsData';
+import {useEffect} from "react";
+import {useDarkMode} from "./context/DarkModeContext.jsx";
 
 function App() {
+  const { darkMode } = useDarkMode();
+
+  useEffect(() => {
+    // Apply the theme class to the body element
+    document.body.className = darkMode ? "body-dark" : "body-light";
+  }, [darkMode]); // Re-apply when darkMode changes
+
   return (
     <Router>
       <Layout>

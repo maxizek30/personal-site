@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 .Showcase-Section.dark-mode {
-    color: white;
+    color: #FFFBF5;
 }
 .titleSection {
     display: flex;
@@ -63,12 +63,36 @@
     align-items: center;
     gap: 30px;
 }
+h1, h2, h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h1 {
+    color: #BD3944;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 50px;
+}
 h2 {
     color: #FD4556;
     font-size: 60px;
     font-style: normal;
     font-weight: 100;
-    text-align: center;
+    margin-top: 25px;
+
+}
+h3 {
+    color: #53212B;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 12px;
+
+}
+.Showcase-Section.dark-mode h3 {
+    color: #FFFBF5;
 }
 p {
     font-size: 32px;

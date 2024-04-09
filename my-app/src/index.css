@@ -18,5 +18,21 @@ body {
   flex-direction: column;
 }
 
+.body-light {
+  margin: 0;
+  height: 100vh; /* 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFBF5;
+}
+
+.body-dark {
+  margin: 0;
+  height: 100vh; /* 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
 
 
